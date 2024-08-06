@@ -2,7 +2,7 @@ const AssemblyAI = require("assemblyai").AssemblyAI
 const { uploadFile, deleteFile } = require("./upload")
 
 const client = new AssemblyAI({
-  apiKey: "243843c8ddf24a08b300827e5b5fda0b"
+  apiKey: process.env.ASSEMBLY_API_KEY
 })
 
 const audioUrl =
